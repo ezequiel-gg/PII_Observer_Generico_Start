@@ -1,9 +1,9 @@
 namespace Observer
 {
-    public interface IObservable
+    public interface IObservable<K>
     {
-        void Subscribe(IObserver observer);
+        void Subscribe(IObserver<K> observer);
 
-        void Unsubscribe(IObserver observer);
+        void Unsubscribe(IObserver<K> observer);
     }
 }
